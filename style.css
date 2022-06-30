@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-240rem);
+  }
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding: 4rem;
+
+  overflow: hidden;
+}
+
+.logos {
+  height: 3.2rem;
+  animation: slide linear forwards 15s;
+}
